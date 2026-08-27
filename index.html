@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angel Niño | Portafolio personal </title> 
+<style>
+  :root {
+    --bg: #0f172a;
+    --bg-soft: #16213e;
+    --card: #1b2a4a;
+    --text: #e8ecf4;
+    --text-dim: #9aa5c1;
+    --accent:  --accent: #f472b6; 
+    --accent-soft: rgba(94, 234, 212, 0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+  }
+
+  header {
+    padding: 90px 24px 70px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--bg-soft), var(--bg));
+  }
+
+  header h1 {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    letter-spacing: -0.5px;
+  }
+
+  header p.role {
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+  }
+
+  header p.bio {
+    max-width: 560px;
+    margin: 20px auto 0;
+    color: var(--text-dim);
+    font-size: 1rem;
+  }
+
+  main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  section {
+    margin-bottom: 70px;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+     margin-bottom: 20px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+  }
+
+  .skill-card {
+    background: var(--card);
+     border-radius: 14px;
+    padding: 18px 16px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .book-card {
+    background: var(--card);
+     border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .book-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .book-info {
+    padding: 16px;
+  }
+
+  .book-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+
+  .book-info p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Angel Niño</h1>
+    <p class="role">Estudiante de Ingeniería de Sistemas</p>
+    <p class="bio">
+      soy una persona apasionado por el desarrollo web y el aprendizaje constante de nuevas
+      tecnologías. Actualmente enfocado en fortalecer mis habilidades en
+      control de versiones, desarrollo front-end y buenas prácticas de
+      programación.
+    </p>
+  </header>
+
+  <main>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Git &amp; GitHub</div>
+        <div class="skill-card">Trabajo en equipo</div>
+         <div class="skill-card">Diseño Responsive</div>
+      </div>
+    </section>
+
+    <section id="libros">
+      <h2>Libros leídos</h2>
+      <div class="books-grid">
+
+        <div class="book-card">
+          <img src="https://covers.openlibrary.org/b/isbn/0307474275-L.jpg" alt="Portada de Cien años de soledad">
+          <div class="book-info">
+            <h3>Cien años de soledad</h3>
+            <p>Gabriel García Márquez</p>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img src="https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg" alt="Portada de 1984">
+          <div class="book-info">
+            <h3>1984</h3>
+            <p>George Orwell</p>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img src="https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg" alt="Portada de El Alquimista">
+          <div class="book-info">
+            <h3>El Alquimista</h3>
+            <p>Paulo Coelho</p>
+          </div>
+        </div>
+
+      </div>
+      </section> </main> <footer> &copy; 2026 Angel Niño — Taller de Desarrollo Web, CUC. Hecho con dedicación. </footer> </body> </html>
